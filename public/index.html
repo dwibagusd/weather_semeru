@@ -113,7 +113,7 @@
     };
 
     async function loadData() {
-      const response = await fetch("weather_semeru.geojson");
+      const response = await fetch("/api/weather");
       const data = await response.json();
 
       // ---- ARG ----
