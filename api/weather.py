@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.after_request
 def add_cors_headers(response):
     # Development: "*" ; production: ganti dengan domain kamu mis. "https://namakamu.vercel.app"
-    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Origin"] = "https://weather-semeru.vercel.app/"
     response.headers["Access-Control-Allow-Methods"] = "GET,OPTIONS"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type"
     return response
